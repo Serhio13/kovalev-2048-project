@@ -75,7 +75,6 @@ const game = {
       this.historyScore(this.score);
       this.showResult();
       this.canvas.style.display = 'none';
-      document.getElementById('btn').style.display = 'none';
     }
     this.draw.block();
   },
