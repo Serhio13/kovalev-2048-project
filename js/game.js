@@ -28,7 +28,8 @@ const game = {
   },
   move(dir) {
     function modify(x, y) {
-      tx = x, ty = y;
+      let tx = x; 
+      let ty = y;
       if (dir[0] == 0) {
         let q = tx;
         tx = ty;
