@@ -105,7 +105,7 @@ function SwitchToRulesPage() {
 
 function SwitchToGamePage() {
   SwitchToState({
-    pagename: 'game'
+    pagename: 'game',
   });
   location.reload();
 }

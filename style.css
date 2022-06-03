@@ -56,11 +56,7 @@ canvas {
   text-align: center;
   margin-top: 10%;
   font-size: 30px;
-}
-
-.game__title:hover {
-  color: #edcf72;
-  transition: all 0.3s ease-in-out;
+  animation: main 5s linear 0s infinite;
 }
 
 .game__list {
@@ -111,7 +107,7 @@ a {
 #highScores {
   margin: 15px auto;
   width: 500px;
-  font-size: 22px;
+  font-size: 32px;
   text-align: center;
   color: #776e65;
 }
@@ -119,6 +115,28 @@ a {
 #app {
   display: block;
   margin: 0 auto;
+}
+
+@keyframes main {
+  0% {
+    color: black;
+  }
+
+  25% {
+    color: #edcf72;
+  }
+
+  50% {
+    color: black;
+  }
+
+  75% {
+    color: #f67c5f;
+  }
+
+  100% {
+    color: black;
+  }
 }
 
 @media (max-width: 550px) {

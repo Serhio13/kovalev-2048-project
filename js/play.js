@@ -21,8 +21,10 @@ game.play = {
   onTouchMove() {
     canvas.addEventListener('touchmove', (event) => {
       let touch = event.touches[0];
-      game.play.ex = touch.clientX, game.play.ey = touch.clientY;
-      game.play.dx = game.play.ex - game.play.sx, game.play.dy = game.play.ey - game.play.sy;
+      game.play.ex = touch.clientX;
+      game.play.ey = touch.clientY;
+      game.play.dx = game.play.ex - game.play.sx;
+      game.play.dy = game.play.ey - game.play.sy;
       event.preventDefault();
     })
   },

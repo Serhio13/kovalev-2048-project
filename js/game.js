@@ -28,7 +28,8 @@ const game = {
   },
   move(dir) {
     function modify(x, y) {
-      tx = x, ty = y;
+      let tx = x; 
+      let ty = y;
       if (dir[0] == 0) {
         let q = tx;
         tx = ty;
@@ -74,7 +75,6 @@ const game = {
       this.historyScore(this.score);
       this.showResult();
       this.canvas.style.display = 'none';
-      document.getElementById('btn').style.display = 'none';
     }
     this.draw.block();
   },
